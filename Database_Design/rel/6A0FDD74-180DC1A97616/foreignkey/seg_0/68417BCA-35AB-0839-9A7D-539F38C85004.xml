@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="68417BCA-35AB-0839-9A7D-539F38C85004" containerWithKeyObject="AC93AB1A-BE94-6560-4E53-AE1DF8826746" localFKIndex="9C7EF70C-0D2C-DEC3-32BC-28E7C39D6B2F" name="TVSeries_Review_TV_Series_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 23:09:52 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9CB10C13-88BE-AE12-2960-D31A396E0666</referredTableID>
+<keyObject>D55E188E-C957-D984-B788-45C4386DB755</keyObject>
+<referredKeyID>D55E188E-C957-D984-B788-45C4386DB755</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

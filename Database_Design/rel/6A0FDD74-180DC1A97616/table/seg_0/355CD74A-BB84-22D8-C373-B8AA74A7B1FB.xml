@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="355CD74A-BB84-22D8-C373-B8AA74A7B1FB" name="Theatre_Chains">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-18 22:23:46 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_26</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Chain_ID" id="4E2A9CA0-1AD5-6827-235E-DEFE3B002369">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-18 22:24:40 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Chain_Name" id="AC53F066-06E7-5955-9C7A-ED2AC5C6EDE0">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-18 22:24:40 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E9E76C65-A052-6F64-92F8-96FAD30A2DF0" name="Theatre_Chains_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-18 22:24:40 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E2A9CA0-1AD5-6827-235E-DEFE3B002369"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

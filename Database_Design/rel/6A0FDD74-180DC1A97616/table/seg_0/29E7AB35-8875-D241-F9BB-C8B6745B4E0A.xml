@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="29E7AB35-8875-D241-F9BB-C8B6745B4E0A" name="Theatre_Reviews">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:07:11 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="D331BF4A-A135-21AC-12C1-26978A789460">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:08:03 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="theatre_id" id="92A722B3-6A71-72D0-F023-DBFBF3409EE6">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:08:03 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A66913D4-16B2-912C-93F9-C57AC3A1DC90" referredColumn="9DBD1FBA-3135-E578-8DCC-B75F7464F417"/>
+</associations>
+</Column>
+<Column name="review" id="EB8FF034-031A-6E40-35CC-BF4B616D848F">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:08:03 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="timestamp" id="2A0D4495-8053-BCF6-28B3-2B288F227384">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:08:03 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="src_ref_id" id="E7B15F32-7C55-B90D-C5C8-832DC2F97221">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:26:23 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="364F255B-2F0D-68DE-E702-AA1373FB3049" name="Theatre_Reviews_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:08:03 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D331BF4A-A135-21AC-12C1-26978A789460"/>
+<colUsage columnID="92A722B3-6A71-72D0-F023-DBFBF3409EE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92B7808D-24DC-F62D-99B6-455BADED18B2" name="Theatre_Reviews_Theatre_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 22:46:35 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92A722B3-6A71-72D0-F023-DBFBF3409EE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

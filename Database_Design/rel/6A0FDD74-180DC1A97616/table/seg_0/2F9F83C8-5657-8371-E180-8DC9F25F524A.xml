@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F9F83C8-5657-8371-E180-8DC9F25F524A" name="Cast_Master">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:14:51 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_25</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cast_id" id="7A4B9E87-6A2F-F0A3-5F93-4C5886C9E8F6">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:15:26 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cast_type" id="E0D5FD01-F1AE-FAAB-5FF7-4642177F3E3B">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:15:26 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3B810408-76FB-BB25-29A6-83B815B3ECC2" name="Cast_Master_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:15:26 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A4B9E87-6A2F-F0A3-5F93-4C5886C9E8F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

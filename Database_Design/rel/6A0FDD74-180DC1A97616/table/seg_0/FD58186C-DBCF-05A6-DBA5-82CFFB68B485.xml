@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD58186C-DBCF-05A6-DBA5-82CFFB68B485" name="Source_Master">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:03:43 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_30</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="source_id" id="FC944491-881E-A827-7772-255D87411137">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:07:32 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="404DD38E-D981-BEB5-7B1B-67F67A2770DF">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:07:32 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="url" id="F9AF9888-68E3-6734-388B-41F0752C006E">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:07:32 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FEF45E10-A642-E41E-B075-E5C73191D464" name="Ratings_Reviews_Source_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:07:32 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC944491-881E-A827-7772-255D87411137"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="Ratings_Reviews_Source_CK_1" directorySegmentName="seg_0" id="E1CEFF22-05F7-1312-30DF-7B96CBB045E8">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:07:32 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<rule>MOVIE_TVSERIES_FLAG IN (&apos;T&apos;,&apos;M&apos;)</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="Ratings_Reviews_Source_CK_2" directorySegmentName="seg_0" id="A34ED655-DD24-6466-5F41-3AD2156116BB">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:10:24 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<rule>RATING_REVIEW_FLAG IN (&apos;rating&apos;,&apos;review&apos;)</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

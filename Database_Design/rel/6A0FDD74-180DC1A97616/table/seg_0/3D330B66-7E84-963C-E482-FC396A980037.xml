@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D330B66-7E84-963C-E482-FC396A980037" name="Movies">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:36:10 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="movie_id" id="4B3184D5-A38D-DE5B-D8A1-7CACD37EDA26">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:38:07 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="0DBB8284-C754-A52C-5CCF-2068F5FB1B14">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:38:07 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mpaa_rating" id="43087110-A7CE-4073-A088-E92BCD08BABA">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-12 00:25:09 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="movie_popularity" id="C77C6844-B311-D60B-41D5-5A66C9B50D7C">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:38:07 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_sequel" id="C5555686-21CA-287C-E48A-4FB4A01AC5D5">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:38:07 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_adaptation" id="FDEEE9B3-3CEC-3D0D-5602-F7DCA2235278">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:38:07 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="release_date" id="B8A8DED8-4040-4C2E-4CD0-B66D8E12907D">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:38:07 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="runtime" id="59F410C0-2158-DAB0-7614-B52FFAA7027B">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:38:07 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="language" id="BF5169D8-57F3-1B9B-5A08-1D0DD0F9BF6F">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:38:07 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tagline" id="9F8F1193-4B8E-A9B4-A80A-C4F0C26CA453">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-12 00:27:46 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="release_year" id="D2D63A45-40FB-9EA1-287B-1E29AB75540B">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-13 17:04:13 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="src_ref_id" id="80BBFB66-814A-20BB-B273-B98FAD1857E0">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-13 19:37:44 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D675D704-C496-720C-E092-8B4B34102952" name="Movies_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:38:07 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B3184D5-A38D-DE5B-D8A1-7CACD37EDA26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="Movies_CK_1" directorySegmentName="seg_0" id="4F5833D1-DEB5-084A-BE6E-0CB6802BED24">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-13 17:45:27 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<rule>is_sequel IN (&apos;Y&apos;,&apos;N&apos;)</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="Movies_CK_2" directorySegmentName="seg_0" id="5200681A-3066-3961-F5A1-DBFAE6924A5F">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-13 17:50:19 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<rule>is_adaptation IN (&apos;Y&apos;,&apos;N&apos;)</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

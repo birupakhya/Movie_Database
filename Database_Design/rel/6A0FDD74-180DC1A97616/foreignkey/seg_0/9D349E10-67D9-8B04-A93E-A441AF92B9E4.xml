@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9D349E10-67D9-8B04-A93E-A441AF92B9E4" containerWithKeyObject="A39966D5-FF12-FA5E-602D-9CD97403E779" localFKIndex="7BBA20DB-35C1-A1AA-75AF-41EADDD190C1" name="Box_Office_Sales_Movies_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 23:05:30 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3D330B66-7E84-963C-E482-FC396A980037</referredTableID>
+<keyObject>D675D704-C496-720C-E092-8B4B34102952</keyObject>
+<referredKeyID>D675D704-C496-720C-E092-8B4B34102952</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

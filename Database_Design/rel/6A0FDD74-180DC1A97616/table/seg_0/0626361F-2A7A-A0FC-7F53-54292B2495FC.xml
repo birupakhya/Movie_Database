@@ -1,0 +1,196 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0626361F-2A7A-A0FC-7F53-54292B2495FC" name="All_Individuals">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:15:34 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_26</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="individual_id" id="2C2A5665-EBE1-DD8A-623E-08318722BCFC">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:19:04 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="individual_type" id="7FD70251-DC71-B84B-0A81-8C2D43F27B4E">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:19:04 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="63E10337-C451-A7A7-9F42-F95EAC8DDCAB">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:19:04 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="44CFD377-4DB3-562F-4C3D-5E80C940E5A6">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-13 20:09:59 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="B1C396A7-6FA3-1EDB-7782-1D63E3A26F41">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:19:04 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="state_id" id="2B15687A-2C0A-925A-4CA4-F64DE4FEC593">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:19:04 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD86B3E3-065F-95D3-5048-1805213D5AD7" referredColumn="EF8EC526-7F25-8A24-F3BB-E9EB3C9ABE3A"/>
+</associations>
+</Column>
+<Column name="city_id" id="96FEF8B3-EE95-76C2-3111-76DFC23D8B1E">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:19:04 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="98E18052-9F04-4E21-ABC0-99F9E265A226" referredColumn="EC7D228E-50E9-D523-7270-A6F2E16D0FA7"/>
+</associations>
+</Column>
+<Column name="pin_code" id="C9E27DB8-2580-8C3E-E933-E85E1A140DDB">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:19:04 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gender" id="826C0D56-1F57-899F-BAF4-AE08EFA3E1EB">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:19:04 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_of_birth" id="B6794031-C16A-CD68-AFBE-4B4258EAAE06">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:19:04 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="FC6CFFE3-D23B-E2D0-F992-E2F3139ED970">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-13 20:10:38 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ethnicity" id="3DF88E4C-F0E3-F7C1-E45F-043F4D0ACE9D">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-13 20:43:23 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="src_ref_id" id="8DC2B176-90DC-0AA2-BAB7-E4EA1984F034">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:22:24 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D0FD55F4-0500-DBAC-4B98-C3C7999544A3" name="All_Individuals_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:19:04 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C2A5665-EBE1-DD8A-623E-08318722BCFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3EF27413-3219-8A63-76A7-DFF99889922E" name="All_Individuals_City_Master_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 22:28:49 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96FEF8B3-EE95-76C2-3111-76DFC23D8B1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9E00FEB-8744-D037-4D6F-F51C5DA705D6" name="All_Individuals_State_Master_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 22:29:10 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B15687A-2C0A-925A-4CA4-F64DE4FEC593"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

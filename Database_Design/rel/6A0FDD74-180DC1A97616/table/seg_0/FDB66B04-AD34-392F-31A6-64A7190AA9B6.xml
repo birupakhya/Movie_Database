@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FDB66B04-AD34-392F-31A6-64A7190AA9B6" name="Tags">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:10:13 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tag_id" id="9C08DCA9-C1AA-E961-E617-D1791E668A98">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:11:35 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="3F5CCA03-6F05-847C-8BDE-D425974D8F6D">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:11:35 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E243E5B9-3CBD-6A9E-1C16-03BDE2682293" referredColumn="2C2A5665-EBE1-DD8A-623E-08318722BCFC"/>
+</associations>
+</Column>
+<Column name="movie_id" id="C73F3C56-BFB6-A8CB-64AF-8945A57915EF">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:11:35 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61E85DE4-A53A-D6AB-A32F-B7D267A40534" referredColumn="4B3184D5-A38D-DE5B-D8A1-7CACD37EDA26"/>
+</associations>
+</Column>
+<Column name="tag_name" id="058A8082-E116-2789-0E18-49715836B89F">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:11:35 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_updated" id="3073C82E-0219-2753-CE2D-2F00A73EDA4F">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:11:35 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tag_popularity" id="214E687D-9D61-5372-2676-266353322F84">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:11:35 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="src_ref_id" id="7BEC9EC7-4BE1-1122-AB1E-8DC9B266A304">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:24:06 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A62E77C7-CF76-3812-5656-8F0F73ADFEA0" name="Tags_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:11:35 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C08DCA9-C1AA-E961-E617-D1791E668A98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27463BB6-01FF-02CE-3938-B3D4734CB96A" name="Tags_All_Individuals_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 23:10:31 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F5CCA03-6F05-847C-8BDE-D425974D8F6D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD218751-466C-3048-65F9-B955BC57B39D" name="Tags_Movies_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 23:10:31 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C73F3C56-BFB6-A8CB-64AF-8945A57915EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

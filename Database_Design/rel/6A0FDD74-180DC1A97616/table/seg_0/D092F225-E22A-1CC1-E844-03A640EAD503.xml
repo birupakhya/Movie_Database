@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D092F225-E22A-1CC1-E844-03A640EAD503" name="Movie_Showtimes">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:41:12 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="theatre_id" id="BE9D2DA8-1AB9-0464-F94C-C5F6C5AAC6E6">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:42:59 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2E84EC0-77A9-3804-AC4C-4F6CA16AD6CD" referredColumn="9DBD1FBA-3135-E578-8DCC-B75F7464F417"/>
+</associations>
+</Column>
+<Column name="movie_id" id="0328C8CE-7B6A-EF08-4019-FE19E6C4AF5F">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:42:59 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8A948B5-A27C-431F-271F-EF215F37FDAA" referredColumn="4B3184D5-A38D-DE5B-D8A1-7CACD37EDA26"/>
+</associations>
+</Column>
+<Column name="show_time" id="8CBB0EF4-E964-E3FD-14AF-7DB3B4470D28">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:42:59 UTC</createdTime>
+<commentInRDBMS>YYYYMMDD</commentInRDBMS>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="screen" id="F9FB2230-35D1-7FF9-F827-C9558D3567E2">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 16:15:06 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_premium_screening" id="A2FDB946-577E-9419-7E71-841026902C1E">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:42:59 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_active" id="04E3CFD9-C7F8-1D13-8555-5CCFFBE27651">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 16:31:53 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="src_ref_id" id="13288F9E-102D-2D68-7B39-F61CDBB4FE33">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:21:10 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="136E4DFC-0741-714D-C884-1B449ACA24BA" name="Movie_Showtimes_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:42:59 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE9D2DA8-1AB9-0464-F94C-C5F6C5AAC6E6"/>
+<colUsage columnID="0328C8CE-7B6A-EF08-4019-FE19E6C4AF5F"/>
+<colUsage columnID="8CBB0EF4-E964-E3FD-14AF-7DB3B4470D28"/>
+<colUsage columnID="F9FB2230-35D1-7FF9-F827-C9558D3567E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB3E3576-BBF1-975B-FA10-D027DE2F991D" name="Movie_Showtimes_Theatre_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 22:30:58 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE9D2DA8-1AB9-0464-F94C-C5F6C5AAC6E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="95C8EFCC-15AD-0275-E72D-50CD8DDA0B6E" name="Movie_Showtimes_Movies_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 22:30:58 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0328C8CE-7B6A-EF08-4019-FE19E6C4AF5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

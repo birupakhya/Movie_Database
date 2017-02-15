@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="345D6A4A-0816-ED9D-C4A7-914030F8B6AA" name="Award_Master">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:59:18 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="award_id" id="2D6B548D-7715-568B-B67A-6D14516E65DA">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 22:55:51 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="award_name" id="598A9D55-F46A-ED8E-7782-60C5AA6509E6">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:00:49 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="event_location" id="61ECF2BD-43DC-7634-2214-CBDC3BC4EB65">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:00:49 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="event_date" id="EF3CC98D-AA4F-CEB4-5F10-C485B18EAA17">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:00:49 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="award_type" id="ED8E1E18-0A2E-A9D7-4C00-CB908746D8B9">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-25 17:32:37 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8DDA8EC4-5008-70E0-FEC4-287C44DE0CF1" name="Award_Master_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:00:56 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D6B548D-7715-568B-B67A-6D14516E65DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

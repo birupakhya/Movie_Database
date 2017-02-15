@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF0C4171-71DE-ABEE-9E08-27919C6EADE6" name="Movie_Ratings">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:01:11 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="C231C97A-3A3E-FDD7-C32C-2334040CA5CE">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:03:45 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="movie_id" id="5AA62D3D-5C5A-B1D0-35AB-A4F7FADFC273">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:03:45 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B78A490B-335D-8C63-69F2-7348FB20720A" referredColumn="4B3184D5-A38D-DE5B-D8A1-7CACD37EDA26"/>
+</associations>
+</Column>
+<Column name="rating_date" id="8FD6F34B-5976-0847-A8F5-4781200EBC94">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:03:45 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rating" id="12103AFB-6860-DE9B-F871-ACBF9F0FAA55">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:03:45 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rating_source" id="3402067D-A4A3-38D0-70EC-8BDBE707511D">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-12 00:26:46 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="movie_rank" id="5456A2E6-90E6-3E00-BD4A-1135BE25A292">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-12 00:26:46 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="movie_votes" id="926CEF31-792E-B732-BE4F-5DE49793BC35">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-12 00:26:46 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="src_ref_id" id="239CC511-79F9-08F5-9F23-A2CA06712562">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:26:09 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B01DA561-4634-CE82-1D28-9CDEB2267589" name="Movie_Ratings_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:03:45 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C231C97A-3A3E-FDD7-C32C-2334040CA5CE"/>
+<colUsage columnID="5AA62D3D-5C5A-B1D0-35AB-A4F7FADFC273"/>
+<colUsage columnID="8FD6F34B-5976-0847-A8F5-4781200EBC94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6006B40-1587-2A6E-B6E0-45E709CD8054" name="Movie_Ratings_Movies_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 22:43:56 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AA62D3D-5C5A-B1D0-35AB-A4F7FADFC273"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

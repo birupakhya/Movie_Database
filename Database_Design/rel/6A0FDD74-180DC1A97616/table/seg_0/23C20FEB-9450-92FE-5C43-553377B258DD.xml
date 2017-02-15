@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="23C20FEB-9450-92FE-5C43-553377B258DD" name="TVSeries_Ratings">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:08:18 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="19609A2C-2AE5-81B7-5752-6797B737680F">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:09:12 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4CF2629-BDBE-7CB1-C8E1-619981B2F1EF" referredColumn="2C2A5665-EBE1-DD8A-623E-08318722BCFC"/>
+</associations>
+</Column>
+<Column name="tvseries_id" id="218C2D6C-A2C0-C795-78F9-F3D7A28F2302">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:09:12 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E3BA7157-52A0-CD49-82AA-67FE13CCF137" referredColumn="1AE86741-0F28-3837-FA23-1F97F24854C3"/>
+</associations>
+</Column>
+<Column name="rating" id="C44908D6-9B1B-0F39-D2E4-A4D8873D9DA9">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:09:12 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="timestamp" id="E1E3D13F-CE2F-08A1-2FD0-FD683FA44B8F">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:09:12 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="src_ref_id" id="3F8F44CE-66BB-C370-CF34-38CBC9471AE6">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:25:47 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA34346A-3091-E368-149E-5F5EABEF8E1A" name="TVSeries_Ratings_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:09:12 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19609A2C-2AE5-81B7-5752-6797B737680F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CB6A2D0-39DE-3F34-FD99-69675FC4E1B0" name="TVSeries_Ratings_All_Individuals_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 22:48:46 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19609A2C-2AE5-81B7-5752-6797B737680F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50A72D94-C5EA-F18D-550E-A04534BDE873" name="TVSeries_Ratings_TV_Series_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 22:48:46 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="218C2D6C-A2C0-C795-78F9-F3D7A28F2302"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

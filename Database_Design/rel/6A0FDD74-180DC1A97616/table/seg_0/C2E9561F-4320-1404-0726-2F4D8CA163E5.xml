@@ -1,0 +1,205 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C2E9561F-4320-1404-0726-2F4D8CA163E5" name="Theatre">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:44:02 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="theatre_id" id="9DBD1FBA-3135-E578-8DCC-B75F7464F417">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:47:10 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="chain_id" id="CF8CD76B-DA3A-AFE9-88B7-61DBF7FEEF05">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-18 22:25:42 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5537D56-12DD-F170-AF0E-232B82BF41F3" referredColumn="4E2A9CA0-1AD5-6827-235E-DEFE3B002369"/>
+</associations>
+</Column>
+<Column name="theatre_name" id="5D08D0BB-C577-B366-94C0-BA6F52649C4A">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:47:10 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="count_no" id="18AA0087-1B82-3A6D-7FBF-C7BD4D459908">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:47:10 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city_id" id="4D2108E6-EAB3-210D-F063-0656A58ED961">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:47:10 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E3F7B8F4-7CF9-2918-5953-787255436CAE" referredColumn="EC7D228E-50E9-D523-7270-A6F2E16D0FA7"/>
+<colAssociation fkAssociation="E3E2CF7E-F01C-4763-0881-DBD8C49B76CF" referredColumn="EC7D228E-50E9-D523-7270-A6F2E16D0FA7"/>
+</associations>
+</Column>
+<Column name="state_id" id="A69EA5A9-710F-6865-C759-57E29098BD4D">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:47:10 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="669A65D2-8B38-8ABC-3E5D-8F332E338A2A" referredColumn="EF8EC526-7F25-8A24-F3BB-E9EB3C9ABE3A"/>
+</associations>
+</Column>
+<Column name="address" id="0FEC5175-C1FB-FE57-1D4B-D70A4F8BDD69">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:47:10 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pin_code" id="BFDAED16-BC7A-E05D-C11C-DCB49769B790">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:47:10 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom_location" id="C321212F-ACED-A910-113A-15AEE6B08AEC">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:47:10 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="url" id="B80FE933-F61E-FE70-04C3-3C81D2AE206A">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:47:10 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="screens" id="4F945EAF-AAB6-71F4-4EDD-E171952640C2">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-18 21:58:16 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="src_ref_id" id="8A187F28-754A-B754-D15A-3168145D0181">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:20:40 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1325CCB3-585C-2B4A-351D-499660356800" name="Theatre_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:47:10 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DBD1FBA-3135-E578-8DCC-B75F7464F417"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F77D478-8522-1440-95C6-8BE4260304CF" name="Theatre_City_Master_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 22:26:58 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D2108E6-EAB3-210D-F063-0656A58ED961"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A6981BD-A12F-57BB-F783-489807F08E35" name="Theatre_City_Master_FKv2">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 23:08:59 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D2108E6-EAB3-210D-F063-0656A58ED961"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A175361-12E8-82BF-8F86-171CE309D87C" name="Theatre_Movies_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 23:09:12 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A69EA5A9-710F-6865-C759-57E29098BD4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA706B29-5244-8833-66B9-F483999AD17C" name="Theatre_Theatre_Chains_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-18 22:26:56 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF8CD76B-DA3A-AFE9-88B7-61DBF7FEEF05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

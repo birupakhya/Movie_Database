@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="13DC1932-B8FE-6F3D-61E5-713916BD1696" name="Ticket">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:47:18 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="theatre_id" id="9FF295E5-9664-5012-3D48-E7B3E7027FD9">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:49:48 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37E7387F-0A18-5178-E8E9-78EF70C94708" referredColumn="9DBD1FBA-3135-E578-8DCC-B75F7464F417"/>
+</associations>
+</Column>
+<Column name="movie_id" id="6723691A-D023-07BF-B086-0BDA396C35A5">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:49:48 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="21223B6E-81F2-320C-339D-754C157DCB80" referredColumn="4B3184D5-A38D-DE5B-D8A1-7CACD37EDA26"/>
+</associations>
+</Column>
+<Column name="screen_category" id="9F1BA4BD-4762-1D4B-9E1C-8F2FF16176BC">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:49:48 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ticket_category" id="75760C2A-65C6-7B19-F754-B3E9A648571D">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:49:48 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ticket_price" id="98C11748-E787-61D8-4E7C-5F99BEF5CB83">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:49:48 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DB7A7A27-72AA-82A8-95CE-504AC468FF55" name="Ticket_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:49:48 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FF295E5-9664-5012-3D48-E7B3E7027FD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF583FDC-4A2E-8205-E91F-812CE0A16482" name="Ticket_Theatre_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 22:32:40 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FF295E5-9664-5012-3D48-E7B3E7027FD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35378C00-B689-5356-B120-E1820D743AD5" name="Ticket_Movies_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 22:32:40 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6723691A-D023-07BF-B086-0BDA396C35A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

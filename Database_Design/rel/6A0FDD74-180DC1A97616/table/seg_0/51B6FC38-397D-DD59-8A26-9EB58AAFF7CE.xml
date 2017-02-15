@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="51B6FC38-397D-DD59-8A26-9EB58AAFF7CE" name="TVSeries_Cast">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:13:27 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_24</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tvseries_id" id="23AFE216-E39E-A5E6-2538-7CE3EA8BF943">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:14:49 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="45B405F6-E08D-B8BC-E91C-B5846E2EED5B" referredColumn="1AE86741-0F28-3837-FA23-1F97F24854C3"/>
+</associations>
+</Column>
+<Column name="cast_category_id" id="645AABE9-F9F7-ECB0-B37B-9A5ED0A50108">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:14:49 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B4246F4-F1DC-E3BC-2882-582124C3E6A9" referredColumn="7A4B9E87-6A2F-F0A3-5F93-4C5886C9E8F6"/>
+</associations>
+</Column>
+<Column name="cast_name" id="A45CC486-35DC-1FA0-94AB-545B704C60F5">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:14:49 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="character_name" id="5817C7DD-C0A1-ED93-0B83-96F4CD7EF6F7">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:14:49 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="45E68FE6-EA40-FBE7-8CC9-7E26F2950F77" name="TVSeries_Cast_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:14:49 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23AFE216-E39E-A5E6-2538-7CE3EA8BF943"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33E9ED75-7EEE-84CF-4F1A-94D727BF80AB" name="TVSeries_Cast_TV_Series_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 22:49:12 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23AFE216-E39E-A5E6-2538-7CE3EA8BF943"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FED8807F-1E48-2A7B-7723-068729CCE9F4" name="TVSeries_Cast_Cast_Master_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 23:07:55 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="645AABE9-F9F7-ECB0-B37B-9A5ED0A50108"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8836DF7F-C45F-4478-BD7C-5149A04C355F" name="Movie_Reviews">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:03:58 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="DFBED8A4-C5E4-86C5-A768-F2E0E4D6BE91">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:06:11 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="664A9C49-E285-2F7D-66FB-477B6A5C2BAA" referredColumn="2C2A5665-EBE1-DD8A-623E-08318722BCFC"/>
+</associations>
+</Column>
+<Column name="movie_id" id="F260D78F-F158-A79C-73C6-DAE14EF240E4">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:06:11 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D848522-0500-A624-90D2-31D2CA7C14AE" referredColumn="4B3184D5-A38D-DE5B-D8A1-7CACD37EDA26"/>
+</associations>
+</Column>
+<Column name="review" id="F20198AB-D01F-240F-40AB-F699535B0F88">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:06:11 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="timestamp" id="A61C4B88-0665-AC97-9034-A227839B70FD">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:06:11 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="src_ref_id" id="EB195ADA-E055-9333-CD3C-77D76FBC9A77">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:26:47 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E536164-0A18-1A03-6DE2-7991401E5193" name="Movie_Reviews_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:06:11 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFBED8A4-C5E4-86C5-A768-F2E0E4D6BE91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F558F27C-3648-C0A4-53AD-3D5E93169E7A" name="Movie_Reviews_All_Individuals_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 23:14:12 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFBED8A4-C5E4-86C5-A768-F2E0E4D6BE91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="075F3B7A-6E46-9316-3E37-AF6D3BAE7AFE" name="Movie_Reviews_Movies_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 23:14:12 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F260D78F-F158-A79C-73C6-DAE14EF240E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

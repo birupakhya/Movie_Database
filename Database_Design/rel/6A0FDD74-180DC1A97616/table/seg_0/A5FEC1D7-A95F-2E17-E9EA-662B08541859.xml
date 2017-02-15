@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A5FEC1D7-A95F-2E17-E9EA-662B08541859" name="Movie_Awards">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:54:13 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="movie_id" id="467CC8E4-1A9C-10FE-3E74-393A6A5F8A39">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:55:14 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F29387EB-F652-ED0B-D6B6-1029C3BEBCC3" referredColumn="4B3184D5-A38D-DE5B-D8A1-7CACD37EDA26"/>
+</associations>
+</Column>
+<Column name="event_id" id="AD0A28A0-0A4B-936C-28FE-7472B26C7F50">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:55:14 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0E7B317-7486-B30B-FC4D-4EEA3375EC82" referredColumn="2D6B548D-7715-568B-B67A-6D14516E65DA"/>
+</associations>
+</Column>
+<Column name="cast_id" id="ABB97EE0-063A-D5DA-552E-CACACCB5B065">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:57:51 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE8B30C9-6DE2-A633-0B4B-9846BCADB221" referredColumn="7A4B9E87-6A2F-F0A3-5F93-4C5886C9E8F6"/>
+</associations>
+</Column>
+<Column name="award_category" id="43E99060-B5F3-7396-B76E-A9EBE4FB6152">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:55:14 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="src_ref_id" id="12B4F1C6-5133-05C6-27CE-0DF3E955327F">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:27:53 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D544E87-28F9-A69C-F5DF-5D252ED48CC6" name="Movie_Awards_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:55:14 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="467CC8E4-1A9C-10FE-3E74-393A6A5F8A39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C073A158-62EB-E518-D517-4D5253665AFD" name="Movie_Awards_Movies_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 22:54:26 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="467CC8E4-1A9C-10FE-3E74-393A6A5F8A39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E0D3530F-7694-C98D-25E6-590777D2E8D3" name="Movie_Awards_Award_Master_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 23:13:46 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD0A28A0-0A4B-936C-28FE-7472B26C7F50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94454D19-077C-F7D9-6D5C-93964B5C3AA4" name="Movie_Awards_Cast_Master_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 23:28:41 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABB97EE0-063A-D5DA-552E-CACACCB5B065"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

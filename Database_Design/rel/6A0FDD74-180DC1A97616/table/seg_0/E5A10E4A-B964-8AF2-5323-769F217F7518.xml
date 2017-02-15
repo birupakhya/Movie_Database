@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5A10E4A-B964-8AF2-5323-769F217F7518" name="Theatre_Ratings">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:06:18 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="D186810B-CA7A-4B31-B0F7-C9ED70E9590A">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:07:08 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="85ADCB67-D7EA-CDFD-562C-BC4E62D345B8" referredColumn="2C2A5665-EBE1-DD8A-623E-08318722BCFC"/>
+</associations>
+</Column>
+<Column name="theatre_id" id="E2B61B55-1BFB-316A-3A92-50997238519C">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:07:08 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F898F32-8AD7-15A4-0049-08A669F81B7F" referredColumn="9DBD1FBA-3135-E578-8DCC-B75F7464F417"/>
+</associations>
+</Column>
+<Column name="rating_date" id="049904A9-4F42-6D2A-5A07-1FD494692417">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:07:08 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rating" id="165EF3A9-D46B-096E-9F14-F96111DF20B0">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:07:08 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rating_src_id" id="90FB7220-92D0-A9F0-068A-4B86160802E7">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:03:30 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="12071E48-3CC7-46E1-696C-F7B6ED1D5BD7" name="Theatre_Ratings_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 18:07:08 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D186810B-CA7A-4B31-B0F7-C9ED70E9590A"/>
+<colUsage columnID="E2B61B55-1BFB-316A-3A92-50997238519C"/>
+<colUsage columnID="049904A9-4F42-6D2A-5A07-1FD494692417"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CFBCA515-8AB6-6A26-F301-A1211B09BAA3" name="Theatre_Ratings_Theatre_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 22:46:02 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2B61B55-1BFB-316A-3A92-50997238519C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CCB7240B-A2D4-BC58-CECF-96744D7AC369" name="Theatre_Ratings_All_Individuals_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:02:13 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D186810B-CA7A-4B31-B0F7-C9ED70E9590A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

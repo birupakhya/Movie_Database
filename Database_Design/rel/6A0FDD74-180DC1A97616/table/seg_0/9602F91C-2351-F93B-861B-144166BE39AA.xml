@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9602F91C-2351-F93B-861B-144166BE39AA" name="State_Master">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:50:56 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="state_id" id="EF8EC526-7F25-8A24-F3BB-E9EB3C9ABE3A">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:51:31 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="iso" id="69E6DAA0-7A06-51D4-876E-7CB24C3D8192">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-12 21:11:48 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="state_name" id="592D9661-9289-DF0F-096A-DB589F3FA399">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:51:31 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400</dataTypeSize>
+<ownDataTypeParameters>400,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="28CC9697-F7D5-1F18-022D-1FE86AF3A0B9">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-12 21:43:08 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="src_ref_id" id="8DD6DA64-0BBB-0DD5-FC36-FCBEFACC1EB2">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:23:25 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B2B4350-2866-3D32-FCFD-076E02E24B7B" name="State_Master_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:51:31 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF8EC526-7F25-8A24-F3BB-E9EB3C9ABE3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

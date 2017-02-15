@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A39966D5-FF12-FA5E-602D-9CD97403E779" name="Box_Office_Sales">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:40:04 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="movie_id" id="1F68CA47-DD3D-B365-B1F1-BE59E3CC5918">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:41:07 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D349E10-67D9-8B04-A93E-A441AF92B9E4" referredColumn="4B3184D5-A38D-DE5B-D8A1-7CACD37EDA26"/>
+</associations>
+</Column>
+<Column name="country_id" id="55E8F486-BCE4-0401-EEAD-8C5242591B04">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:41:07 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97D5A0D8-6C81-62F0-DBF9-27AED2CF6C66" referredColumn="BC255CD3-867D-B26C-99E4-10D448272234"/>
+</associations>
+</Column>
+<Column name="budget" id="89C03F84-6AE6-D057-C2DA-206208F4B163">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:41:07 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="opening_weekend" id="1AEF9147-D654-DF54-DB39-9CB8A749DCCE">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:41:07 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_revenue" id="840B8027-7E67-C2AA-FB72-3DB4D801E1AC">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:41:07 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="src_ref_id" id="FD91B5F8-1A91-5CD9-FCAE-B6DDAB9EBBBB">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-19 17:29:41 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F7AAE1BA-4F5C-885E-594F-EB87F4663C51" name="Box_Office_Sales_PK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 17:41:07 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F68CA47-DD3D-B365-B1F1-BE59E3CC5918"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BBA20DB-35C1-A1AA-75AF-41EADDD190C1" name="Box_Office_Sales_Movies_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 23:05:30 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F68CA47-DD3D-B365-B1F1-BE59E3CC5918"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="247C3BE7-F537-5F5D-4F94-8C2789106190" name="Box_Office_Sales_Country_Master_FK">
+<createdBy>Birupakhya</createdBy>
+<createdTime>2016-11-11 23:05:30 UTC</createdTime>
+<ownerDesignName>Database_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55E8F486-BCE4-0401-EEAD-8C5242591B04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
