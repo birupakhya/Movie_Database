@@ -12,6 +12,10 @@ input_file = '/Users/birupakhya/Google Drive/Courses/ADBMS/Movie_Database/movies
 # Declare output_file to be used to store retreived information from OMDB_API in a CSV file
 output_file = '/Users/birupakhya/Google Drive/Courses/ADBMS/Movie_Database/omdb_output.csv'
 
+# Declare output_file to be used to store retreived information from OMDB_API in a CSV file
+error_log_file = '/Users/birupakhya/Google Drive/Courses/ADBMS/Movie_Database/omdb_error_log.txt'
+
+
 # Define a function that retreives response using requests library and then converts it into a json object. Failure gives an Error
 def return_json(url):
     try:
@@ -25,6 +29,7 @@ def return_json(url):
 
 failed_movies = []
 movie_not_found = []
+failed_movies_unicode = []
 
 with open(input_file,'r') as csv_file:
     csv_reader = csv.reader(csv_file)
@@ -45,7 +50,8 @@ with open(input_file,'r') as csv_file:
         request_movie_year  = movie_year
         request_tail        = 'plot=full&r=json'
         request_url         = request_head + request_title + request_movie_name + request_year + request_movie_year + request_tail
-        response            = return_json(request_url)
+        request_url_unicode = unicode(request_url, "utf-8")
+        response            = return_json(request_url_unicode)
         
         try:
             oResponse = OrderedDict(response)
@@ -56,12 +62,19 @@ with open(input_file,'r') as csv_file:
                     myWriter.writerow(oResponse)
             else:
                 movie_not_found.append(movie_name)
-                print "Movie not found", movie_not_found
+                #print "Movie not found", movie_not_found
         except ValueError, Argument:
-                    # print "Error: ", Argument
-                    failed_movies.append(movie_name)
-                    print "Failed movies", failed_movies
+            failed_movies.append(movie_name)
+        except UnicodeDecodeError:
+            failed_movies_unicode.append(movie_name)
+            #print "Failed movies", failed_movies
 
+
+with open(error_log_file,'a') as error_log:
+    for movie in movie_not_found:
+        error_log.write("List of movies not found in OMDB::\n%s\n" % movie)
+    for movie in failed_movies:
+        error_log.write("List of movies which gave an error::\n%s\n" % movie)
 
                
             
